@@ -38,6 +38,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'avenir-black';
+    src: url(../font/avenir-black/AvenirLTStd-Black.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.avenir-black {
+    font-family: 'avenir-black';
+}
+
 .text-twc {
     font-family: 'tw-cen-mt' !important;
 }
@@ -416,7 +427,7 @@ body {
 
     .stories-column-1 {
         padding-left: 10%;
-        padding-right: 15%;
+        padding-right: 18%;
     }
 
     .stories-page p {
@@ -432,6 +443,7 @@ body {
         font-family: 'avenir-next-lt-pro';
         letter-spacing: .8px;
         font-size: 14.5px;
+        text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.3);
     }
 
     .stories-column-2 {
@@ -470,6 +482,7 @@ body {
         color: #0C0C0C;
         font-size: 17px;
         font-family: 'typo-slab-bold', serif;
+        padding-bottom: 20px;
     }
 
     .stories-row #circle-word-2 {
@@ -477,11 +490,11 @@ body {
     }
 
     .stories-row #circle-word-4 {
-        transform: rotate(15deg);
+        transform: rotate(10deg);
     }
 
     .stories-row #circle-word-5 {
-        transform: rotate(32deg);
+        transform: rotate(28deg);
     }
 
     .stories-column-5 p {
@@ -589,6 +602,91 @@ body {
     }
 
     /* End Kelasku */
+
+    /* Keperluanku */
+
+    .keperluanku-row-1,
+    .keperluanku-row-2,
+    .keperluanku-row-3 {
+        min-width: 100vw;
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .keperluanku-row-1 {
+        padding: 10rem 2.5rem;
+        margin-left: 0px;
+    }
+
+    .keperluanku-row-1 .column-1,
+    .keperluanku-row-1 .column-3 {
+        align-items: center;
+    }
+
+    .keperluanku-row-1 .column-2 {
+        margin-top: 2rem;
+    }
+
+    .keperluanku-row-1 p,
+    .keperluanku-row-2 p,
+    .keperluanku-row-3 p {
+        font-family: 'typo-slab-normal', serif;
+        line-height: 28px;
+        letter-spacing: .43px;
+    }
+
+    .keperluanku-row-1 p {
+        font-size: 14px;
+        max-width: 77%;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .keperluanku-row-1 a {
+        color: #fff;
+        font-family: 'avenir-next-lt-pro', sans-serif;
+        text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.3);
+        font-size: 16px;
+        margin-top: 0.5rem;
+    }
+
+    .keperluanku-row-2 .column-1 {
+        padding: 2rem 2rem 2rem 4rem;
+    }
+
+    .keperluanku-row-2 p {
+        font-size: 13px;
+    }
+
+    .keperluanku-row-3 {
+        background-color: #FEEFBA;
+        padding: 2rem 3rem;
+    }
+
+    .keperluanku-row-3 p {
+        max-width: 100%;
+        font-size: 20px;
+        line-height: 37px;
+        margin-top: 2rem;
+    }
+
+    .keperluanku-row-3 h2 {
+        font-family: 'typo-slab-normal', serif;
+        font-size: 42px;
+    }
+
+    .keperluanku-row-3 .list-content {
+        margin-top: 1rem;
+    }
+
+    .keperluanku-row-3 .list {
+        font-family: 'typo-slab-normal', serif;
+        font-size: 12px;
+    }
+
+    /* End Keperluanku */
     
 }
 
@@ -709,5 +807,67 @@ body {
         background-size: cover;
         padding-left: 5rem;
         padding-right: 0rem;
+    }
+    /* End Kelasku */
+
+    /* Keperluanku */
+
+    .keperluanku-row-1 {
+        padding: 0px 8rem;
+        margin-left: -15px;
+    }
+
+    .keperluanku-row-1 .column-2 {
+        margin-top: -3rem;
+    }
+
+    .keperluanku-row-1 .column-1 {
+        align-items: flex-start;
+    }
+
+    .keperluanku-row-1 .column-1 p {
+        text-align: left;
+        margin-top: 9rem;
+    }
+
+    .keperluanku-row-1 .column-3 {
+        align-items: flex-end;
+    }
+
+    .keperluanku-row-1 .column-3 p {
+        text-align: right;
+        margin-top: 13rem;
+    }
+
+    .keperluanku-row-2 {
+        max-height: 100vh;
+    }
+
+    .keperluanku-row-2 .column-1 {
+        padding: 0rem 14rem 0rem 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .keperluanku-row-3 {
+        padding-left: 8rem;
+        padding-top: 11rem;
+    }
+
+    .keperluanku-row-3 p {
+        max-width: 40.5%;
+    }
+
+    .keperluanku-row-3 .list {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .keperluanku-row-3 .list-content {
+        width: 11.5%;
+        padding-right: 2.5rem;
     }
 }
