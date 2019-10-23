@@ -85,6 +85,7 @@ body {
         min-height: 100vh;
         background-position: center;
         background-size: cover;
+        background-color: #FEEFBA;
     }
 
     .index-btn-column {
@@ -125,7 +126,6 @@ body {
 
     .index-btn:hover {
         color: #A36E5C;
-        font-size: 30px;
     }
     /* End Index */
 
@@ -210,6 +210,15 @@ body {
         overflow: hidden;
     }
 
+    .home-intro,
+    .studio-section,
+    .stories-page,
+    .kelasku-row-1,
+    .kelasku-row-2,
+    .keperluanku-row-1 {
+        background-color: #E1DBCF;
+    }
+
     .home-intro {
         background-position: center;
     }
@@ -235,7 +244,7 @@ body {
         animation-name: homeIntro;
         animation-duration: 0.75s;
         animation-fill-mode: forwards;
-        animation-delay: 1.1s;
+        animation-delay: 1.5s;
     }
 
     .home-intro .row {
@@ -302,14 +311,14 @@ body {
     }
 
     .home-intro-left {
-        font-size: 26px;
-        font-family: typo-slab-normal;
         max-width: 75%;
-        letter-spacing: 2px;
     }
 
-    .home-intro-left p {
+    .home-intro-left h1 {
         line-height: 25px;
+        font-size: 26px;
+        letter-spacing: 2px;
+        font-family: typo-slab-normal;
     }
 
     .home-intro-right {
@@ -721,6 +730,8 @@ body {
         max-height: 100vh;
         background-position: top;
         background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FFDFDF;
     }
 
     .campaign-column-1::before {

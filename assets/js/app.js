@@ -1,36 +1,25 @@
 $(document).ready(() => {
+    // search button onclick
     $('#search-btn').click((e) => {
         $('#search-form').toggleClass('hide');
         $('#search-column').toggleClass('hide');
         e.preventDefault();
     });
 
+    // navbar toggler onclick
     $('.navbar-toggler').click(() => {
+        // check user web browser
         if (!$('#search-form').hasClass('hide') && $(window).width() < 1000) {
             $('#search-form').toggleClass('hide');
             $('#search-column').toggleClass('hide');
         }
     });
 
+    // page onclick
     $('.row').click(() => {
         if ($('#search-column').hasClass('hide')) {
             $('#search-form').toggleClass('hide');
             $('#search-column').toggleClass('hide');
         }
     });
-
-    // let homeLink = $('.home-intro-right a');
-
-    // const homeAnimation = () => {
-    //     homeLink.css({fontWeight: 600, color: '#000'});
-    //     homeLink.animate ({
-    //         fontWeight: 200,
-    //     }, 'slow', () => {
-    //         homeAnimation();
-    //     });
-    // }
-
-    // if (homeLink.length !== 0) {
-    //     homeAnimation()
-    // }
 });
