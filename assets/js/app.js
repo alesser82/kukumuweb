@@ -18,4 +18,19 @@ $(document).ready(() => {
             $('#search-column').toggleClass('hide');
         }
     });
+
+    // let homeLink = $('.home-intro-right a');
+
+    // const homeAnimation = () => {
+    //     homeLink.css({fontWeight: 600, color: '#000'});
+    //     homeLink.animate ({
+    //         fontWeight: 200,
+    //     }, 'slow', () => {
+    //         homeAnimation();
+    //     });
+    // }
+
+    // if (homeLink.length !== 0) {
+    //     homeAnimation()
+    // }
 });
