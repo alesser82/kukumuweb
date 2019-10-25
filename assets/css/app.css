@@ -107,7 +107,7 @@ body {
 
     .bg-video {
         position: fixed;
-        right: 0;
+        right: -70%;
         bottom: 0;
         min-width: 100%;
         min-height: 100%;
@@ -778,6 +778,10 @@ body {
         -ms-flex: 0 0 12%;
         flex: 0 0 12%;
         max-width: 12%;
+    }
+
+    .bg-video {
+        right: 0%;
     }
 
     /* Navbar */
