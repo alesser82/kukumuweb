@@ -22,4 +22,19 @@ $(document).ready(() => {
             $('#search-column').toggleClass('hide');
         }
     });
+
+    $('.new-section').on('mousewheel',function (e) {
+        e.preventDefault();
+        if (e.deltaY < 0) {
+            if (!$(this).is(':last-child')) {
+                $('html, body').animate({ scrollTop: $(this).next().offset().top }, 400);
+            }
+        } else {
+            if (!$(this).is(':first-child')) {
+                $('html, body').animate({ scrollTop: $(this).prev().offset().top }, 400);
+            }
+        }
+        return;
+    });
+
 });
