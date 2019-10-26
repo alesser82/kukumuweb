@@ -25,7 +25,6 @@ $(document).ready(() => {
 
     // mousewheel
     $('.new-section').on('mousewheel',function (e) {
-        e.preventDefault();
         if (e.deltaY < 0) {
             if (!$(this).is(':last-child')) {
                 $('html, body').animate({ scrollTop: $(this).next().offset().top }, 400);
