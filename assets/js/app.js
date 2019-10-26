@@ -23,6 +23,7 @@ $(document).ready(() => {
         }
     });
 
+    // mousewheel
     $('.new-section').on('mousewheel',function (e) {
         e.preventDefault();
         if (e.deltaY < 0) {

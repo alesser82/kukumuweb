@@ -752,6 +752,12 @@ body {
     
 }
 
+@media(min-width: 600px) {
+    .bg-video {
+        right: 0%;
+    }
+}
+
 @media (min-width: 768px) {
 
     /* Footer */
@@ -983,5 +989,11 @@ body {
     .campaign-gallery-8 {
         padding: 0% 0% 0% 1.7%;
         margin-top: 0%;
+    }
+}
+
+@media(min-height: 1000px) {
+    .bg-video {
+        right: -50%;
     }
 }
