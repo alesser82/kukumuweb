@@ -27,6 +27,14 @@ $(document).ready(() => {
     $('.new-section').on('mousewheel',function (e) {
         if (e.deltaY < 0) {
             if (!$(this).is(':last-child')) {
+                // check animated
+                if ($(this).next().hasClass('slide-left')) {
+                    $('.img-slide').css({right: '-100%', opacity: 0});
+                    $('.img-slide').animate({
+                        right: '0%',
+                        opacity: 1,
+                    }, 1000);
+                }
                 $('html, body').animate({ scrollTop: $(this).next().offset().top }, 400);
             }
         } else {
