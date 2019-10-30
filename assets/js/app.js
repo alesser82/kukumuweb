@@ -35,6 +35,10 @@ $(document).ready(() => {
                         opacity: 1,
                     }, 1000);
                 }
+                
+                // if ($(this).next().attr('id') == 'continue-content') {
+                //     return;
+                // }
                 $('html, body').animate({ scrollTop: $(this).next().offset().top }, 400);
             }
         } else {
@@ -43,6 +47,16 @@ $(document).ready(() => {
             }
         }
         return;
+    });
+
+    // click continue-content handler
+    $('#continue-read').click(function (e) {
+        if ($(this).attr('href') == '#continue-content') {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('#continue-content').offset().top,
+            }, 400);
+        }
     });
 
 });

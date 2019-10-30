@@ -74,6 +74,7 @@ body {
 
     a:hover {
         text-decoration: none;
+        color:unset;
     }
 
     .index-btn:focus {
