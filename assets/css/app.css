@@ -41,12 +41,11 @@
 @font-face {
     font-family: 'avenir-black';
     src: url(../font/avenir-black/AvenirLTStd-Black.otf) format('opentype');
-    font-weight: bold;
     font-style: normal;
 }
 
 .avenir-black {
-    font-family: 'avenir-black';
+    font-family: 'avenir-black', sans-serif;
 }
 
 .text-twc {
