@@ -59,4 +59,9 @@ $(document).ready(() => {
         }
     });
 
+    // navbar
+    $('.navbar-toggler').click(() => {
+        $('.navbar').toggleClass('active');
+    });
+
 });
