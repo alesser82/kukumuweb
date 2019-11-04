@@ -123,6 +123,7 @@ body {
         font-family: typo-slab-normal !important;
         padding: 2rem 2.5rem;
         max-width: 100vw;
+        transition: .4s;
     }
 
     .navbar.active {
@@ -163,11 +164,13 @@ body {
         height: 100%;
         position: absolute;
         z-index: 10;
-        /* margin-left: -25%; */
         right: 10%;
         margin-top: -11%;
     }
 
+    .navbar-toggler:focus {
+        outline-color: #A36E5C;
+    }
 
     .navbar .dropdown-item {
         font-size: 14px;
@@ -793,6 +796,11 @@ body {
         position: absolute;
         right: 7%;
     }
+
+    .navbar.active {
+        background: none;
+    }
+
     /* End Navbar */
 
     /* Home */
