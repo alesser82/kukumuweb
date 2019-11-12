@@ -761,6 +761,18 @@ body {
         background-color: #FEFEFA;
     }
 
+    .campaign-gallery-1 img,
+    .campaign-gallery-2 img,
+    .campaign-gallery-3 img,
+    .campaign-gallery-5 img,
+    .campaign-gallery-4 img,
+    .campaign-gallery-6 img,
+    .campaign-gallery-7 img,
+    .campaign-gallery-8 img {
+        position: relative;
+        z-index: 2;
+    }
+
     /* End Campaign */
     
 }
