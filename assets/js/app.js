@@ -6,6 +6,39 @@ $(document).ready(() => {
         e.preventDefault();
     });
 
+    let windowWidth = $(window).width();
+    let imgSlide    = $('.img-slide');
+
+    var jarakWindow     = $(window).scrollTop();
+
+    if (imgSlide.length > 0) {
+        var jarakKelasku    = $('.kelasku-row-2').offset().top;
+    }
+
+    const imgSlideAnimation = () => {
+        $('.img-slide').animate({
+            right: '0%',
+            opacity: 1,
+        }, 1000);
+    }
+
+    if ((jarakKelasku - jarakWindow) < 500) {
+        imgSlideAnimation();
+    }
+
+    $(window).scroll(function () {
+
+        var jarakWindow     = $(window).scrollTop();
+
+        if ($('.kelasku-row-2').length > 0) {
+            var jarakKelasku = $('.kelasku-row-2').offset().top;
+        }
+
+        if ((jarakKelasku - jarakWindow) < 750 && windowWidth > 900 && imgSlide.length > 0 && (jarakKelasku - jarakWindow) > 500) {
+            imgSlideAnimation();
+        }
+    });
+
     // navbar toggler onclick
     $('.navbar-toggler').click(() => {
         // check user web browser
@@ -20,29 +53,6 @@ $(document).ready(() => {
         if ($('#search-column').hasClass('hide')) {
             $('#search-form').toggleClass('hide');
             $('#search-column').toggleClass('hide');
-        }
-    });
-
-    // mousewheel
-    $('.new-section').on('mousewheel',function (e) {
-        if (e.deltaY < 0) {
-            if (!$(this).is(':last-child')) {
-                e.preventDefault();
-                // check animated
-                if ($(this).next().hasClass('slide-left')) {
-                    $('.img-slide').css({right: '-100%', opacity: 0});
-                    $('.img-slide').animate({
-                        right: '0%',
-                        opacity: 1,
-                    }, 1000);
-                }
-                $('html, body').animate({ scrollTop: $(this).next().offset().top }, 400);
-            }
-        } else {
-            if (!$(this).is(':first-child')) {
-                e.preventDefault();
-                $('html, body').animate({ scrollTop: $(this).prev().offset().top }, 400);
-            }
         }
     });
 

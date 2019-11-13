@@ -152,25 +152,21 @@ body {
     .navbar .dropdown-menu {
         background: none;
         border: none;
-        padding: .8rem 0;
-        margin: .8rem 0;
+        margin-top: -3px;
     }
 
-    .navbar .dropdown-item:focus,
-    .navbar .dropdown-item:hover {
+    .navbar .dropdown-item:focus {
         background: none;
     }
 
-    .navbar .dropdown-item::before {
-        content: '';
-        background: white;
-        opacity: 0.33;
-        width: 95%;
-        height: 100%;
-        position: absolute;
-        z-index: 10;
-        right: 10%;
-        margin-top: -11%;
+    .dropdown-item {
+        background-color: rgba(255, 255, 255, 0.35);
+        padding: 18px 50px;
+        transition: .2s;
+    }
+
+    .dropdown-item:hover {
+        background-color: rgba(255, 255, 255, 0.25);
     }
 
     .navbar-toggler:focus {
@@ -647,6 +643,10 @@ body {
         background-position: center;
     }
 
+    .keperluanku-row-3 {
+        min-height: unset;
+    }
+
     .keperluanku-row-1 {
         padding: 10rem 2.5rem;
         margin-left: 0px;
@@ -663,7 +663,8 @@ body {
 
     .keperluanku-row-1 p,
     .keperluanku-row-2 p,
-    .keperluanku-row-3 p {
+    .keperluanku-row-3 p,
+    .keperluanku-row-4 p {
         font-family: 'typo-slab-normal', serif;
         line-height: 28px;
         letter-spacing: .43px;
@@ -693,21 +694,24 @@ body {
         font-size: 13px;
     }
 
-    .keperluanku-row-3 {
+    .keperluanku-row-3,
+    .keperluanku-row-4 {
         background-color: #FEEFBA;
         padding: 2rem 3rem;
     }
 
-    .keperluanku-row-3 p {
+    .keperluanku-row-3 p,
+    .keperluanku-row-4 p {
         max-width: 100%;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 37px;
         margin-top: 2rem;
     }
 
-    .keperluanku-row-3 h2 {
+    .keperluanku-row-3 h2,
+    .keperluanku-row-4 h2 {
         font-family: 'typo-slab-normal', serif;
-        font-size: 42px;
+        font-size: 44px;
     }
 
     .keperluanku-row-3 .list-content {
@@ -716,7 +720,7 @@ body {
 
     .keperluanku-row-3 .list {
         font-family: 'typo-slab-normal', serif;
-        font-size: 12px;
+        font-size: 13px;
     }
 
     /* End Keperluanku */
@@ -804,6 +808,11 @@ body {
 }
 
 @media (min-width: 1024px) {
+
+    .img-slide {
+        opacity: 0;
+        right: -100%;
+    }
 
     .center-logo {
         -ms-flex: 0 0 12%;
@@ -953,15 +962,17 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        -ms-flex-direction: column;
     }
 
     .keperluanku-row-3 {
         padding-left: 8rem;
-        padding-top: 11rem;
+        padding-top: 30vh;
+        min-height: 100vh;
     }
 
     .keperluanku-row-3 p {
-        max-width: 40.5%;
+        max-width: 44.5%;
     }
 
     .keperluanku-row-3 .list {
@@ -971,8 +982,23 @@ body {
     }
 
     .keperluanku-row-3 .list-content {
-        width: 11.5%;
+        width: 12.3%;
         padding-right: 2.5rem;
+    }
+
+    .keperluanku-row-4 {
+        padding-left: 8rem;
+        padding-right: 12rem;
+        min-height: 100vh;
+        align-items: center;
+    }
+
+    .keperluanku-row-4 .col-lg-6 {
+        max-width: 40%;
+    }
+
+    .keperluanku-row-4 .col-lg-6:last-child {
+        margin-left: 20%;
     }
 
     /* Campaign */
